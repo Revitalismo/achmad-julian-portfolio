@@ -1,0 +1,64 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .navbar {
+        @apply p-2.5 grid grid-flow-col w-full h-[70px] justify-between grid-cols-[2fr_1fr];
+    }
+
+    .navbar-light {
+        @apply bg-light-100 shadow-[0_0_30px_0_rgba(95,95,95,0.09)];
+    }
+
+    .navbar-dark {
+        @apply bg-dark-100 shadow-[0_0_30px_0_rgba(114,114,114,0.09)];
+    }
+
+    .sidebar {
+        @apply p-3 flex items-center absolute top-0 left-0 h-full w-0 z-10;
+        transition: all 300ms;
+    }
+    
+    .sidebar-open {
+        @apply w-5/6;
+        transition: all 300ms;
+    }
+    
+    .sidebar-close {
+        @apply w-0;
+        transition: all 300ms;
+    }
+
+    .sidebar-light { @apply bg-light-400 text-dark-100; }
+    .sidebar-dark { @apply bg-dark-500 text-grey-300; }
+
+    .sidebar section {
+        @apply h-full w-full max-h-[500px];
+        @apply grid justify-between items-center grid-flow-col;
+    }
+
+    .navigation {
+        @apply h-full flex flex-col justify-evenly p-4;
+    }
+
+    .navigation-link {
+        @apply flex gap-x-3;
+    }
+
+    .close-btn {
+        @apply justify-self-end p-2 rounded-xl border border-solid;
+    }
+
+    .close-btn-light { @apply bg-light-100 border-light-300; }
+    .close-btn-dark { @apply bg-grey-300 border-dark-400; }
+
+    .links {
+        @apply grid-flow-col justify-evenly w-full items-center;
+        @apply font-nunito font-normal text-lg;
+    }
+
+    .links-light { @apply text-dark-200; }
+    .links-dark { @apply text-light-300; }
+
+}

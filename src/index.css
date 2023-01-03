@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    * {
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+    }
+
+    .app-light { @apply bg-light-100; }
+    .app-dark { @apply bg-dark-100; }
+
+    .App {
+        @apply flex flex-col items-center gap-y-10;
+    }
+
+    .btn {
+        @apply py-2.5 px-5 h-10 max-w-[130px] rounded-xl;
+        @apply flex items-center gap-x-1.5;
+        @apply text-lg font-["nunito"] font-normal;
+    }
+
+    .btn-light {
+        @apply bg-blue-100 text-light-200;
+    }
+
+    .btn-dark {
+        @apply bg-dark-200 text-light-200;
+    }
+
+    .profile-picture-mobile {
+        @apply max-w-[200px];
+    }
+
+    .profile-picture {
+        @apply max-w-[300px];
+    }
+
+    .copyright {
+        @apply p-5 font-nunito font-normal text-base;
+    }
+
+    .copyright-light { @apply text-grey-300; }
+    .copyright-dark { @apply text-dark-300; }
+
+    @media screen and (max-width: 640px) {
+        .links {
+            @apply hidden;
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        .links {
+            @apply grid;
+        }
+
+        .menu {
+            @apply hidden;
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+@tailwind components;
+@tailwind utilities;
+
+.socialmedia-container {
+    @apply grid grid-cols-1 gap-3 sm:grid-cols-2;
+}
+
+.socialmedia {
+    @apply flex items-center gap-x-5;
+}
+
+.socialmedia-icon {
+    @apply h-[100px] w-full max-w-[100px] flex justify-center;
+    @apply p-3 rounded-[10px] border-solid border-2;
+}
+
+.socialmedia-icon-light { @apply border-light-300 shadow-[0_0_30px_0_rgba(193,193,193,0.25)]; }
+.socialmedia-icon-dark { @apply border-dark-200 shadow-[0_0_30px_0_rgba(43,43,43,1)]; }
+
+.socialmedia-icon img {
+    @apply max-w-[60px];
+}
+
+.socialmedia a {
+    @apply font-nunito font-medium text-xl break-words max-w-[200px];
+}
+
+.socialmedia-light a { @apply text-dark-400; }
+.socialmedia-dark a { @apply text-grey-300; }

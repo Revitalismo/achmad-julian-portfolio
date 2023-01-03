@@ -1,0 +1,55 @@
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    @apply p-5 w-full max-w-[700px] grid gap-y-10 justify-items-center;
+}
+
+.home-light { @apply bg-light-100; }
+.home-dark { @apply bg-dark-100; }
+
+.introduction {
+    @apply flex items-center gap-2.5 text-[28px] font-bold;
+}
+
+.introduction-light h1 { @apply text-dark-100; }
+.introduction-dark h1 { @apply text-light-300; }
+
+.title-and-buttons {
+    @apply py-2 flex flex-col gap-2.5;
+}
+
+.title-and-buttons p {
+    @apply text-lg font-["nunito"] font-medium max-w-[320px];
+}
+
+.title-and-buttons-light p { @apply text-dark-300; }
+.title-and-buttons-dark p { @apply text-grey-300; }
+
+
+.title-and-buttons form {
+    @apply flex gap-x-1.5;
+}
+
+/* home tech stack */
+.tech-stack {
+    @apply flex flex-col gap-y-5;
+}
+
+.tech-stack article {
+    @apply flex flex-col gap-y-2;
+}
+
+.tech-stack-title {
+    @apply text-xl font-bold font-[roboto];
+}
+
+.tech-stack-title-light { @apply text-dark-300; }
+.tech-stack-title-dark { @apply text-light-300; }
+
+.tech-stack-subtitle {
+    @apply text-lg font-medium font-[nunito];
+}
+
+.tech-stack-subtitle-light { @apply text-dark-400; }
+.tech-stack-subtitle-dark { @apply text-grey-300; }
