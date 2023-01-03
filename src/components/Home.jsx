@@ -26,12 +26,12 @@ export default function Home() {
                     <form>
                         <button className={`btn btn-${theme}`} type="button">
                             <img src={fileAttach} alt="file attach icon" />
-                            <a href="https://tailwindcss.com/docs/installation" target="_blank">resume</a>
+                            <a href="https://drive.google.com/file/d/1ugWMLvHMIQsdRGof4AKzdt1o3jHgcIQx/view?usp=drivesdk" target="_blank">resume</a>
                         </button>
 
                         <button className={`btn btn-${theme}`} type="button">
                             <img src={phoneIcon} alt="phone icon" />
-                            <a href="https://tailwindcss.com" target="_blank">contact</a>
+                            <a href="https://wa.me/qr/6QA6FFJ55TYDL1" target="_blank">contact</a>
                         </button>
                     </form>
                 </article>
