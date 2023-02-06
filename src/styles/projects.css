@@ -1,0 +1,18 @@
+@tailwind utilities;
+
+.nunito {
+    @apply font-nunito font-medium;
+}
+
+.portfolio-img {
+    @apply w-[200px] object-cover aspect-square;
+    @apply rounded-[10px];
+}
+
+.link-portfolio a {
+    @apply text-blue-100;
+}
+
+.link-portfolio a:active {
+    @apply text-dark-100;
+}

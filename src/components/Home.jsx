@@ -5,6 +5,7 @@ import profilePicture from "./../assets/profile-picture.png";
 import fileAttach from "./../assets/file-attach-01.svg";
 import phoneIcon from "./../assets/phone.svg";
 import TechStack from "./TechStack";
+import Project from "./Project.jsx";
 
 export default function Home() {
     const [theme] = useContext(currentTheme);
@@ -38,6 +39,7 @@ export default function Home() {
             </section>
 
             <TechStack />
+            <Project />
         </main>
     );
 }
