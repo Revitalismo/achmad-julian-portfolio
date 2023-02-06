@@ -33,7 +33,7 @@
 
 /* home tech stack */
 .tech-stack {
-    @apply flex flex-col gap-y-5;
+    @apply w-full max-w-[500px] flex flex-col gap-y-5;
 }
 
 .tech-stack article {
